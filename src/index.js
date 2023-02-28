@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
-import State from "./state";
+import Index from "./components/lifecycle";
+import Bind from "./components/bind";
+import Root from "./root";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -17,9 +18,8 @@ let info = [
 
 root.render(
   <React.StrictMode>
-    <App>
-      <h1>Index.js</h1>
-    </App>
-    <State />
+    {/* <Index /> */}
+    {/* <Bind /> */}
+    <Root />
   </React.StrictMode>
 );
